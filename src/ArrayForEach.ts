@@ -9,16 +9,26 @@ var materials = [
     'Helium',
     'Lithium',
     'Beryllium'
-  ];
-  
- 
-  materials.forEach((val)=>{
-      console.log(val);
-    }
-  )
+];
 
 
-  //非同步時會return undefined
-  //console.log(materials.forEach((material)=>{return material;}));
-  //等同
-  //console.log(materials.forEach(material=>material));
+//等同
+//materials.forEach(material => console.log(material));
+
+//等同
+//materials.forEach((material) => { console.log(material); });
+
+//等同
+//materials.forEach(function (material) { console.log(material) });
+
+//等同
+//materials.forEach(function materialForEach (material) { console.log(material) });
+
+//等同
+//materials.forEach(function materialForEach(material) : void { console.log(material) });
+
+//等同
+//materials.forEach(function materialForEach(material:any) : any { console.log(material) });
+
+//等同
+materials.forEach(function materialForEach(material:string) : any { console.log(material) });
