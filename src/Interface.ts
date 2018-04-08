@@ -1,0 +1,3 @@
+interface icallApi{
+    doCall();
+}
