@@ -3,8 +3,12 @@ var ueridarr = ['1', '2', '3', '4', 'U206d25c2ea6bd87c17655609a1c37cb8'],
     newArr = [];
 var re = "^U[0-9a-f]{32}$";
 
-newArr = ueridarr.filter((guid)=>guid.match(re));
+//newArr = ueridarr.filter((guid)=>guid.match(re));
 
-newArr.forEach((item)=>{console.log(item)});
+newArr = ueridarr.filter(guid=>guid.match(re));
+
+newArr.forEach(item=>console.log(item));
 
 console.log(newArr[0]);
+
+

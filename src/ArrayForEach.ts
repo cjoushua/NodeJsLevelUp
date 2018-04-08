@@ -12,12 +12,13 @@ var materials = [
   ];
   
  
-  materials.forEach((val) => {  
+  materials.forEach((val)=>{
       console.log(val);
-  })
+    }
+  )
 
 
   //非同步時會return undefined
-  console.log(materials.forEach((material)=>{return material;}));
+  //console.log(materials.forEach((material)=>{return material;}));
   //等同
-  console.log(materials.forEach(material=>material));
+  //console.log(materials.forEach(material=>material));
