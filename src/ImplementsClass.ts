@@ -1,15 +1,17 @@
 class callApi implements icallApi{
     isSuccess:string;
     constructor(postData:string){
-        this.isSuccess = "isSuccess";
+        this.isSuccess= "isSuccess";
     }
 
     callfailed() :string {
-        return "doCallApiFailed()";
+        this.isSuccess = "doCallApiFailed()";
+        return this.isSuccess;
     }
 
     doCall(){
-        return "doCallApi()";
+        this.isSuccess = "doCallApi()";
+        return this.isSuccess;
     }
 }
 
