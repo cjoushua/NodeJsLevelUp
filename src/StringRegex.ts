@@ -9,3 +9,16 @@ results.map((arr)=>{
 
     console.log(arr);
 })
+
+
+let strr = "first part:second part:third part:fourth part: fifth part: etc";
+console.log(strr.match(/(.*?):(.*?):(.*)/).slice(1));
+
+console.log(strr.match(/(.*?):(.*?):(.*)/).slice(2));
+
+console.log(strr.match(/(.*?):(.*?):(.*)/).slice(0));
+
+
+let strex = "{ 's-env': \n   { 'b1:trackingip': \n.  { .."
+
+console.log(strex.replace(/(\\n| |\t|\r|\n)/g, ''));
